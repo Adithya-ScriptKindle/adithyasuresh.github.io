@@ -18,7 +18,7 @@
 async function updateCounter() {
   let response = await fetch('https://3h7jxzyhaufoowcjltuk27lrne0rkbnf.lambda-url.us-east-1.on.aws/');
   let data = await response.json();
-  counter.innerHTML = `Built with ❤️ | Visitors: ${data}`;
+  counter.innerHTML = `Built with ❤️ Adithya | Visitors: ${data}`;
 }
 
 updateCounter();
@@ -436,11 +436,14 @@ updateCounter();
         </div>
       </section>
       <!--Views-->
-      <section>
-        <div class="view-counter">
-          Couldn't View Reads
+      <footer class="footer">
+        <div class="container">
+          <p class="body-small" style="padding-bottom: 5px;">Be the change you want to see in the world. - Gandhi</p>
+          <p class="body-small view-counter">Built with ❤️ | cannot fetch visitors</p>
+    
         </div>
-      </section>
+      </footer>
+    
 
       <!-- Four -->
       <!--
