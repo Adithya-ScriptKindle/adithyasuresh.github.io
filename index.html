@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+    const counter =  document.querySelector(".view-counter");
+async function updateCounter() {
+  let response = await fetch('https://3h7jxzyhaufoowcjltuk27lrne0rkbnf.lambda-url.us-east-1.on.aws/');
+  let data = await response.json();
+  counter.innerHTML = `Built with ❤️ | Visitors: ${data}`;
+}
+
+updateCounter();
+		</script>
+  <head>
+    <title>Adithya Suresh Babu's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="image avatar"
+          ><img src="images/Profile-pic.jpg" alt=""
+        /></a>
+        <h1>
+          <strong>I am Adithya Suresh Babu</strong>, a Full Stack Developer.
+		</h1>
+		</div>
+        <br />
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+      <div class="topnav" id="myTopnav">
+        <a href="#one" class="active">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+		<a href="#certificates">Certificates</a>
+		<a onclick="window.location.href='https://www.linkedin.com/in/adithya-suresh-babu/'">LinkedIn</a>
+		<a onclick="window.location.href='https://github.com/Adithya-ScriptKindle'" >GitHub</a>
+        <a href="#three">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <!-- One -->
+      <section id="one">
+        <header class="major">
+          <h2>About Me</h2>
+        </header>
+        <p>
+          I am a passionate Software Developer dedicated to crafting responsive
+          and user-friendly websites. Currently pursuing a Master's Degree in
+          Computer Science at the University of Central Florida, I thrive on
+          building dynamic digital experiences. As a Full Stack Developer, I
+          immerse myself in mastering diverse technologies and programming
+          languages, constantly exploring emerging trends to stay at the
+          forefront of innovation. My commitment to continuous learning ensures
+          that I deliver cutting-edge solutions while keeping pace with the
+          ever-evolving landscape of technology.
+        </p>
+
+        <div id="socials-container">
+          <a
+            onClick="window.open('./assets/Adithya_Resume.pdf')"
+            class="button-resume"
+            >View CV</a
+          ><br />
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios/50/linkedin.png"
+            onclick="window.location.href='https://www.linkedin.com/in/adithya-suresh-babu/'"
+            alt="linkedin"
+          />
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/github.png"
+            onclick="window.location.href='https://github.com/Adithya-ScriptKindle'"
+            alt="github"
+          />
+        </div>
+      </section>
+      <!--education-->
+      <section id="eduction">
+        <h2>Education</h2>
+        <div class="row">
+          <article class="work 1">
+            <h3 class="experience-header">
+              <b>University of Central Florida</b>
+            </h3>
+            <h4>Master's in Computer Science</h4>
+            <h5>Graduation - May 2024</h5>
+          </article>
+          <article class="work 1">
+            <h3 class="experience-header"><b>Anna University</b></h3>
+            <h4>Bachelor's in Computer Science and Engineering</h4>
+            <h5>July 2016 - Sep 2020</h5>
+          </article>
+        </div>
+      </section>
+      <!--technical skills-->
+      <section class="skills" id="skills">
+        <h2>Skills and Technologies</h2>
+
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
+              alt="java-coffee-cup-logo--v1"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/python--v1.png"
+              alt="python--v1"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/fluency-systems-filled/96/c.png"
+              alt="c"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/c-plus-plus-logo.png"
+              alt="c-plus-plus-logo"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/html-5--v1.png"
+              alt="html-5--v1"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/css3.png"
+              alt="css3"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/javascript--v1.png"
+              alt="javascript--v1"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/typescript.png"
+              alt="typescript"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/office/80/react.png"
+              alt="react"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/nodejs.png"
+              alt="nodejs"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/ios/50/express-js.png"
+              alt="express-js"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/color/48/spring-logo.png"
+              alt="spring-logo"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/ios/100/mysql.png"
+              alt="mysql"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/mongodb.png"
+              alt="mongodb"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/ios/100/api-settings.png"
+              alt="api-settings"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/amazon-web-services.png"
+              alt="amazon-web-services"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/color/100/git.png"
+              alt="git"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/fluency/48/visual-studio-code-2019.png"
+              alt="visual-studio-code-2019"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/intellij-idea.png"
+              alt="intellij-idea"
+            />
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/docker.png"
+              alt="docker"
+            />
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/ios/100/linux.png"
+              alt="linux"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Experience -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="row">
+          <article class="work 1">
+            <h3 class="experience-header">
+              <b>Graduate Teaching Assistant</b>
+            </h3>
+            <h4>University of Central Florida</h4>
+            <h5>Oct 2023 - Present</h5>
+            <ul>
+              <li>
+                Working as a Graduate Teaching Assistant for the course
+                Introduction to C Programming and Software Engineering, guiding
+                and assisting over 100 students in comprehending fundamental C
+                Programming and Software Engineering principles,leading to a
+                "10%" improvement in both class grades.
+              </li>
+            </ul>
+          </article>
+          <article class="work 1">
+            <h3 class="experience-header">
+              <b>Associate Software Developer</b>
+            </h3>
+            <h4>Tata Consultancy Services</h4>
+            <h5>Nov 2020 - Jun 2022</h5>
+            <ul>
+              <li>
+                Developed and implemented revenue-boosting offers, resulting in
+                a 2% revenue increase by providing complimentary 5G network
+                access.
+              </li>
+              <li>
+                Executed automated testing using Selenium to ensure seamless
+                offer application and rectified issues promptly.
+              </li>
+              <li>
+                Mitigated a critical 10% revenue loss risk in the SIM card
+                issuance process through strategic intervention and Splunk
+                resolution.
+              </li>
+              <li>
+                Enhanced customer acquisition and revenue by 15% through
+                frontend redesign and targeted advertisements.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="row">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/instagram_thumbs.jpg" class="image fit thumb"
+              ><img src="images/thumbs/instagram_clone_cover.png" alt=""
+            /></a>
+            <h3>Instagram Clone</h3>
+            <p>Created Instagram Clone using react,Node and MySQL.</p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/02.jpg" class="image fit thumb"
+              ><img src="images/thumbs/Spotify_template.jpg" alt=""
+            /></a>
+            <h3>Music Recommendation</h3>
+            <p>Created an Music Recommendation Model using Spotify playlist.</p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/03.jpg" class="image fit thumb"
+              ><img src="images/thumbs/luxe_clothing.jpg" alt=""
+            /></a>
+            <h3>Luxe Clothing</h3>
+            <p>Created a Clothing E-Commerence site using MERN stack.</p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/04.jpg" class="image fit thumb"
+              ><img
+                src="images/thumbs/workout-tracker-steven-salgado-desktop.png"
+                alt=""
+            /></a>
+            <h3>WorkOut Tracker</h3>
+            <p>Created a WorkOut Trcaker using MERN stack.</p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/05.jpg" class="image fit thumb"
+              ><img src="images/thumbs/images.jpeg" alt=""
+            /></a>
+            <h3>Pneumonia Detection</h3>
+            <p>
+              Created a Machine Learning model to detect Pneumonia in a person.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/06.jpg" class="image fit thumb"
+              ><img src="images/thumbs/fakenews.jpg" alt=""
+            /></a>
+            <h3>Fake New Detection</h3>
+            <p>Created an NLP model for detecting Fake News in Twitter.</p>
+          </article>
+        </div>
+      </section>
+
+	  <!--Certification-->
+	  <section id="certificates">
+		<h2>Certificates</h2>
+        <div class="row">
+          <article class="col-6 col-12-xsmall work-item">
+			<div class="resume-item2">
+			<div class="resume-item">
+				<h4>AWS Certificate Cloud Practitioner</h4>
+				<p><em>Amazon Web Services</em></p>
+				<img src="images/Icons/aws-certified-cloud-practitioner.png"/>
+				<a onclick="window.open('assets/AWS Certified Cloud Practitioner certificate.pdf')" data-lightbox="certificate"
+				  data-title="Certificate of Training - Full Stack Web Development(ECIT IIT Kanpur)"
+				  style="color: #5bc91c; font-weight:bold;">🔗Certificate</a>
+			  </div><br/>
+			  <div class="resume-item">
+				<h4>AWS Certificate Developer</h4>
+				<p><em>Amazon Web Services</em></p>
+				<img src="images/Icons/aws-certified-developer-associate.png"/>
+				<a onclick="window.open('assets/AWS Certified Developer - Associate certificate.pdf')" data-lightbox="certificate"
+				  data-title="Certificate of Training - Full Stack Web Development(ECIT IIT Kanpur)"
+				  style="color: #5bc91c; font-weight:bold;">🔗Certificate</a>
+			  </div>
+			</div>
+          </article>
+
+		</section>
+
+      <!-- Contact -->
+      <section id="three">
+        <h2>Get In Touch</h2>
+
+        <div class="row">
+          <div class="col-8 col-12-small">
+            <form method="post" action="#">
+              <div class="row gtr-uniform gtr-50">
+                <div class="col-6 col-12-xsmall">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="col-6 col-12-xsmall">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    rows="4"
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </div>
+          <div class="col-4 col-12-small">
+            <ul class="labeled-icons">
+              <li>
+                <h3 class="icon solid fa-home">
+                  <span class="label">Address</span>
+                </h3>
+                Orlando, FL<br />
+              </li>
+              <li>
+                <h3 class="icon solid fa-envelope">
+                  <span class="label">Email</span>
+                </h3>
+                <a href="mailto:adithyasursad@gmail.com">adithyasursad@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--Views-->
+      <section>
+        <div class="view-counter">
+          Couldn't View Reads
+        </div>
+      </section>
+
+      <!-- Four -->
+      <!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				--></div>
+
+    <!-- Footer 
+    <footer id="footer">
+      <div id="socials-container">
+        <img
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios/50/linkedin.png"
+          onclick="window.location.href='https://www.linkedin.com/in/adithya-suresh-babu/'"
+          alt="linkedin"
+        />
+        <img
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios-filled/50/github.png"
+          onclick="window.location.href='https://github.com/Adithya-ScriptKindle'"
+          alt="github"
+        />
+      </div>
+    </footer>
+	-->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+  </body>
+</html>
