@@ -5,4 +5,5 @@ async function updateCounter() {
   );
   let data = await response.json();
   counter.innerHTML = `Built with ❤️ Adithya | Visitors: ${data}`;
+  console.log(response);
 }
